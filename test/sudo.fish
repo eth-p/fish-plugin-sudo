@@ -1,3 +1,0 @@
-test "$BASENAME"
-    -z ""
-end
