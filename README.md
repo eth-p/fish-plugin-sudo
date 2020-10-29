@@ -1,4 +1,4 @@
-# sudo
+# Improved Sudo for Fish Shell
 
 An improved `sudo` command for fish shell.
 
