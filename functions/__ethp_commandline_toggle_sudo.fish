@@ -1,8 +1,8 @@
 # -----------------------------------------------------------------------------
 # A wrapper for sudo that integrates better with the fish shell.
-# Copyright (C) 2018 eth-p
+# Copyright (C) 2018,2021 eth-p
 # -----------------------------------------------------------------------------
-function __ethp_toggle_sudo_commandline --description 'Toggles sudo on the command line.'
+function __ethp_commandline_toggle_sudo --description 'Toggles sudo on the command line'
 	set -l buf (commandline -b)
 	set -l pos (commandline -C)
 
@@ -14,3 +14,4 @@ function __ethp_toggle_sudo_commandline --description 'Toggles sudo on the comma
 		commandline -C (math $pos+5)
 	end
 end
+

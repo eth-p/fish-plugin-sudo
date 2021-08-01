@@ -3,16 +3,8 @@
 An improved `sudo` command for fish shell.
 
 
-## Install
 
-With [fisher](https://github.com/jorgebucaran/fisher):
-
-```
-fisher add eth-p/fish-plugin-sudo
-```
-
-
-## Improvements
+## Features
 
 **Enter a superuser shell with a single word.**  
 No fiddling with environment variables or having to type `sudo fish`.  
@@ -31,5 +23,24 @@ If you run a command and find out you need to run it as a superuser, simply pres
 ```fish
 apt-get update       # No permission.
 sudo apt-get update  # After pressing UP and CTRL+S.
+```
+
+
+
+
+## Install
+
+With [fisher](https://github.com/jorgebucaran/fisher):
+
+```fish
+fisher install eth-p/fish-plugin-sudo
+```
+
+### Hotkey Support
+
+The <kbd>Ctrl+S</kbd> hotkey is not added by default. In order to bind the hotkey, add the following to your `config.fish` file:
+
+```fish
+bind \cs '__ethp_commandline_toggle_sudo.fish'
 ```
 
