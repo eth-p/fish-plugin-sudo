@@ -41,6 +41,6 @@ fisher install eth-p/fish-plugin-sudo
 The <kbd>Ctrl+S</kbd> hotkey is not added by default. In order to bind the hotkey, add the following to your `config.fish` file:
 
 ```fish
-bind \cs '__ethp_commandline_toggle_sudo.fish'
+bind \cs '__ethp_commandline_toggle_sudo'
 ```
 
